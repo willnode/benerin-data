@@ -3024,7 +3024,6 @@ beri
 beriang
 beriani
 berida
-berik
 beril
 berilium
 berinda
@@ -9863,10 +9862,6 @@ idarah
 idas
 ide
 ideal
-idealis
-idealisasi
-idealisme
-idealistis
 idem
 identifikasi
 identik
@@ -15598,7 +15593,6 @@ lelatu
 lelawa
 lele
 leleh
-lelembut
 lelemuku
 lelep
 leler
@@ -18157,7 +18151,6 @@ muamalat
 muanas
 muara
 muarikh
-muas
 muasasah
 muasir
 muat
@@ -21029,7 +21022,6 @@ petala
 petaling
 petam
 petamari
-petan
 petanen
 petang
 petaram
@@ -22336,7 +22328,6 @@ radis
 radium
 radius
 radon
-radu
 radurisasi
 rafak
 rafaksi
@@ -23071,7 +23062,6 @@ rerak
 rerangka
 reranting
 reras
-rerata
 reresanan
 rerongkong
 rerot
@@ -28604,7 +28594,6 @@ tukmis
 tuksedo
 tuku
 tukuk
-tukul
 tukun
 tukung
 tukup

@@ -1,12 +1,7 @@
 use regex::Regex;
 
 pub fn get_prefix_precedence_matches() -> Vec<Regex> {
-    let regex_rules = vec![
-        r"^be(.*)lah$",
-        r"^be(.*)an$",
-        r"i$",
-        r"is$",
-    ];
+    let regex_rules = vec![r"^be(.*)lah$", r"^be(.*)an$", r"i$", r"is$"];
 
     regex_rules
         .iter()
@@ -42,8 +37,11 @@ pub fn get_suffix_matches() -> Vec<Vec<Ds>> {
         ],
         vec![
             // Remove derivational suffix.
-            Ds::new(r"^(.*?)(is|isme|isasi|i|kan|an)$", Box::new(|x| x[1].to_owned())),
-        ]
+            Ds::new(
+                r"^(.*?)(is|isme|isasi|i|kan|an)$",
+                Box::new(|x| x[1].to_owned()),
+            ),
+        ],
     ]
 }
 
