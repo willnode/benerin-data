@@ -1,4 +1,4 @@
-use regex::Regex;
+use fancy_regex::{Captures, Regex};
 
 pub fn get_prefix_precedence_matches() -> Vec<Regex> {
     let regex_rules = vec![r"^be(.*)lah$", r"^be(.*)an$", r"i$", r"is$"];
@@ -12,11 +12,11 @@ pub fn get_prefix_precedence_matches() -> Vec<Regex> {
 pub struct Ds {
     pub debugr: String,
     pub regex: Regex,
-    pub mutation: Box<dyn Fn(regex::Captures<'_>) -> String>,
+    pub mutation: Box<dyn Fn(Captures<'_>) -> String>,
 }
 
 impl Ds {
-    pub fn new(regex: &str, mutation: Box<dyn Fn(regex::Captures<'_>) -> String>) -> Ds {
+    pub fn new(regex: &str, mutation: Box<dyn Fn(Captures<'_>) -> String>) -> Ds {
         Ds {
             debugr: regex.to_owned(),
             regex: Regex::new(regex).expect("error compile"),
