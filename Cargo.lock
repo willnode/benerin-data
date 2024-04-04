@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "benerin-data"
+name = "benerin_data"
 version = "0.1.0"
 dependencies = [
  "fancy-regex",

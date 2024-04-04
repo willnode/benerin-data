@@ -4,6 +4,14 @@ pub mod sastrawi;
 
 use include_bytes_zstd::include_bytes_zstd;
 
+const PUNCTUATION_LIST: &str = ".,;:?!\n";
+
+pub static EMPTY_STR: &'static str = "";
+
+pub fn get_punctuations_in_hash_set() -> HashSet<char> {
+    PUNCTUATION_LIST.chars().collect()
+}
+
 pub fn get_root_words_in_hash_set() -> HashSet<String> {
     to_hash_set(include_bytes_zstd!("src/data/rootwords.txt", 2))
 }
