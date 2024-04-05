@@ -16,6 +16,10 @@ pub fn get_root_words_in_hash_set() -> HashSet<String> {
     to_hash_set(include_bytes_zstd!("src/data/rootwords.txt", 2))
 }
 
+pub fn get_gram_words_in_csv_str() -> String {
+    String::from_utf8(include_bytes_zstd!("src/data/gram.txt", 2)).expect("error parsing")
+}
+
 pub fn get_prefiks_indexed_in_hash_map() -> HashMap<String, (bool, Vec<String>)> {
     let mut map: HashMap<String, (bool, Vec<String>)> = HashMap::new();
     for r in get_prefiks_in_hash_set().into_iter() {
