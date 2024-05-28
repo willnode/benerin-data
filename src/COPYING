@@ -2,6 +2,13 @@ data/gram.txt - https://huggingface.co/datasets/SEACrowd/indo4b (Processed based
 
 CC0 (Creative Commons Zero) license
 
+
+-----------------------------------------------------------------------------------------
+
+data/address - https://github.com/fityannugroho/idn-area-data/tree/main/data 
+
+Open Database License (ODbL)
+
 -----------------------------------------------------------------------------------------
 
 data/sastrawi.rs - https://github.com/sastrawi/sastrawi/src/Sastrawi/Morphology/Disambiguator/
